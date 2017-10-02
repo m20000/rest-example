@@ -1,0 +1,6 @@
+FROM openjdk:8-jre-alpine
+     
+ENTRYPOINT ["/usr/bin/java", "-jar", "/usr/share/service/${project.build.finalName}.jar"]
+EXPOSE 4567
+ADD target/lib /usr/share/service/lib
+ADD target/*.jar /usr/share/service/

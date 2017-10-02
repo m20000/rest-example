@@ -8,7 +8,7 @@ public class ExampleTest
 {
 
 	@Test	
-	public void test()
+	public void unitTest()
 	{
 		assertTrue("Basic reverse test", Example.reverse("test").equals("tset"));
 	}
